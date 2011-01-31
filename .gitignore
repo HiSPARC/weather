@@ -1,5 +1,6 @@
 # LabView
 *.lvlps
+*.aliases
 
 # OS generated files
 .DS_Store*

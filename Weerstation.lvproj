@@ -29,6 +29,7 @@
       <Item Name="filter_error.vi" Type="VI" URL="filter_error.vi"/>
       <Item Name="settings_file.vi" Type="VI" URL="settings_file.vi"/>
       <Item Name="corrected_time.vi" Type="VI" URL="corrected_time.vi"/>
+      <Item Name="probeersel.vi" Type="VI" URL="../24-10 2010/probeersel.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
