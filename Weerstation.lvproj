@@ -15,7 +15,7 @@
       <Item Name="VantagePro.dll" Type="Document" URL="VantagePro.dll"/>
       <Item Name="SiUSBXp.dll" Type="Document" URL="SiUSBXp.dll"/>
       <Item Name="VP_Disconnect.vi" Type="VI" URL="VP_Disconnect.vi"/>
-      <Item Name="Check_Error.vi" Type="VI" URL="Check_Error.vi"/>
+      <Item Name="Check_Error.vi" Type="VI" URL="../Weerstation 02-02 2011 12.00/Check_Error.vi"/>
       <Item Name="read_binary_setting.vi" Type="VI" URL="read_binary_setting.vi"/>
       <Item Name="read_integer_setting.vi" Type="VI" URL="read_integer_setting.vi"/>
       <Item Name="read_double_setting.vi" Type="VI" URL="read_double_setting.vi"/>
