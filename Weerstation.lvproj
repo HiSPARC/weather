@@ -29,7 +29,9 @@
       <Item Name="filter_error.vi" Type="VI" URL="filter_error.vi"/>
       <Item Name="settings_file.vi" Type="VI" URL="settings_file.vi"/>
       <Item Name="corrected_time.vi" Type="VI" URL="corrected_time.vi"/>
-      <Item Name="probeersel.vi" Type="VI" URL="../24-10 2010/probeersel.vi"/>
+      <Item Name="Fahrenheit_to_Celsius.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/Fahrenheit_to_Celsius.vi"/>
+      <Item Name="mph_to_mps.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/mph_to_mps.vi"/>
+      <Item Name="inHg_to_hPa.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/inHg_to_hPa.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
@@ -98,7 +100,7 @@
             <Property Name="VersionInfoCompanyName" Type="Str">Nikhef</Property>
             <Property Name="VersionInfoFileDescription" Type="Str"></Property>
             <Property Name="VersionInfoFileType" Type="Int">1</Property>
-            <Property Name="VersionInfoFileVersionBuild" Type="Int">14</Property>
+            <Property Name="VersionInfoFileVersionBuild" Type="Int">15</Property>
             <Property Name="VersionInfoFileVersionMajor" Type="Int">1</Property>
             <Property Name="VersionInfoFileVersionMinor" Type="Int">0</Property>
             <Property Name="VersionInfoFileVersionPatch" Type="Int">0</Property>
