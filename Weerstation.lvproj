@@ -29,9 +29,10 @@
       <Item Name="filter_error.vi" Type="VI" URL="filter_error.vi"/>
       <Item Name="settings_file.vi" Type="VI" URL="settings_file.vi"/>
       <Item Name="corrected_time.vi" Type="VI" URL="corrected_time.vi"/>
-      <Item Name="Fahrenheit_to_Celsius.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/Fahrenheit_to_Celsius.vi"/>
-      <Item Name="mph_to_mps.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/mph_to_mps.vi"/>
-      <Item Name="inHg_to_hPa.vi" Type="VI" URL="../Weerstation 14-02 2011 16.00/inHg_to_hPa.vi"/>
+      <Item Name="Fahrenheit_to_Celsius.vi" Type="VI" URL="Fahrenheit_to_Celsius.vi"/>
+      <Item Name="mph_to_mps.vi" Type="VI" URL="mph_to_mps.vi"/>
+      <Item Name="inHg_to_hPa.vi" Type="VI" URL="inHg_to_hPa.vi"/>
+      <Item Name="inch_to_mm.vi" Type="VI" URL="inch_to_mm.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
