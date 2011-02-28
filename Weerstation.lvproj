@@ -15,7 +15,7 @@
       <Item Name="VantagePro.dll" Type="Document" URL="VantagePro.dll"/>
       <Item Name="SiUSBXp.dll" Type="Document" URL="SiUSBXp.dll"/>
       <Item Name="VP_Disconnect.vi" Type="VI" URL="VP_Disconnect.vi"/>
-      <Item Name="Check_Error.vi" Type="VI" URL="../Weerstation 02-02 2011 12.00/Check_Error.vi"/>
+      <Item Name="Check_Error.vi" Type="VI" URL="Check_Error.vi"/>
       <Item Name="read_binary_setting.vi" Type="VI" URL="read_binary_setting.vi"/>
       <Item Name="read_integer_setting.vi" Type="VI" URL="read_integer_setting.vi"/>
       <Item Name="read_double_setting.vi" Type="VI" URL="read_double_setting.vi"/>
@@ -29,10 +29,14 @@
       <Item Name="filter_error.vi" Type="VI" URL="filter_error.vi"/>
       <Item Name="settings_file.vi" Type="VI" URL="settings_file.vi"/>
       <Item Name="corrected_time.vi" Type="VI" URL="corrected_time.vi"/>
-      <Item Name="Fahrenheit_to_Celsius.vi" Type="VI" URL="Fahrenheit_to_Celsius.vi"/>
-      <Item Name="mph_to_mps.vi" Type="VI" URL="mph_to_mps.vi"/>
-      <Item Name="inHg_to_hPa.vi" Type="VI" URL="inHg_to_hPa.vi"/>
-      <Item Name="inch_to_mm.vi" Type="VI" URL="inch_to_mm.vi"/>
+      <Item Name="Fahrenheit_to_Celsius.vi" Type="VI" URL="../Weerstation 16-02 2011 15.00/Fahrenheit_to_Celsius.vi"/>
+      <Item Name="mph_to_mps.vi" Type="VI" URL="../Weerstation 16-02 2011 15.00/mph_to_mps.vi"/>
+      <Item Name="inHg_to_hPa.vi" Type="VI" URL="../Weerstation 16-02 2011 15.00/inHg_to_hPa.vi"/>
+      <Item Name="inch_to_mm.vi" Type="VI" URL="../Weerstation 16-02 2011 15.00/inch_to_mm.vi"/>
+      <Item Name="calculate_Dewpoint.vi" Type="VI" URL="calculate_Dewpoint.vi"/>
+      <Item Name="calculate_wind_chill.vi" Type="VI" URL="calculate_wind_chill.vi"/>
+      <Item Name="calculate_wind_chill_oldformula.vi" Type="VI" URL="calculate_wind_chill_oldformula.vi"/>
+      <Item Name="Read_Weather_Parameters.vi" Type="VI" URL="Read_Weather_Parameters.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
