@@ -42,6 +42,19 @@
       <Item Name="geklooi_units.vi" Type="VI" URL="geklooi_units.vi"/>
       <Item Name="Control 3.ctl" Type="VI" URL="Control 3.ctl"/>
       <Item Name="data_error_Tin.vi" Type="VI" URL="data_error_Tin.vi"/>
+      <Item Name="data_error_Hin.vi" Type="VI" URL="data_error_Hin.vi"/>
+      <Item Name="data_error_Barometer.vi" Type="VI" URL="data_error_Barometer.vi"/>
+      <Item Name="data_error_wind_direction.vi" Type="VI" URL="data_error_wind_direction.vi"/>
+      <Item Name="data_error_wind_speed.vi" Type="VI" URL="data_error_wind_speed.vi"/>
+      <Item Name="data_error_solar_radiation.vi" Type="VI" URL="data_error_solar_radiation.vi"/>
+      <Item Name="data_error_UV_index.vi" Type="VI" URL="data_error_UV_index.vi"/>
+      <Item Name="data_error_UV_Evapotranspiration_rate.vi" Type="VI" URL="data_error_UV_Evapotranspiration_rate.vi"/>
+      <Item Name="data_error_rain_rate.vi" Type="VI" URL="data_error_rain_rate.vi"/>
+      <Item Name="data_error_heat_index.vi" Type="VI" URL="data_error_heat_index.vi"/>
+      <Item Name="data_error_Evapotranspiration_rate.vi" Type="VI" URL="data_error_Evapotranspiration_rate.vi"/>
+      <Item Name="data_error_Temperature.vi" Type="VI" URL="data_error_Temperature.vi"/>
+      <Item Name="data_error_Humidity.vi" Type="VI" URL="data_error_Humidity.vi"/>
+      <Item Name="data_error_dew_point.vi" Type="VI" URL="data_error_dew_point.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
