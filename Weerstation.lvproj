@@ -41,6 +41,7 @@
       <Item Name="Control 2.ctl" Type="VI" URL="Control 2.ctl"/>
       <Item Name="geklooi_units.vi" Type="VI" URL="geklooi_units.vi"/>
       <Item Name="Control 3.ctl" Type="VI" URL="Control 3.ctl"/>
+      <Item Name="data_error_Tin.vi" Type="VI" URL="data_error_Tin.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
