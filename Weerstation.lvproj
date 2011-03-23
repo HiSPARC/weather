@@ -31,6 +31,7 @@
       <Item Name="inHg_to_hPa.vi" Type="VI" URL="inHg_to_hPa.vi"/>
       <Item Name="Main.vi" Type="VI" URL="Main.vi"/>
       <Item Name="mph_to_mps.vi" Type="VI" URL="mph_to_mps.vi"/>
+      <Item Name="read_boolean_setting.vi" Type="VI" URL="read_boolean_setting.vi"/>
       <Item Name="read_integer_setting.vi" Type="VI" URL="read_integer_setting.vi"/>
       <Item Name="Read_Weather_Parameters.vi" Type="VI" URL="Read_Weather_Parameters.vi"/>
       <Item Name="settings_file.vi" Type="VI" URL="settings_file.vi"/>
