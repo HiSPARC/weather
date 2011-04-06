@@ -170,7 +170,7 @@
             <Property Name="Path[1]" Type="Path">../../builds/Weerstation/Vantage_Pro_Weather_software</Property>
             <Property Name="Path[2]" Type="Path">../../builds/Weerstation/Vantage_Pro_Weather_software/data</Property>
             <Property Name="ShowHWConfig" Type="Bool">false</Property>
-            <Property Name="SourceInfoItemCount" Type="Int">38</Property>
+            <Property Name="SourceInfoItemCount" Type="Int">39</Property>
             <Property Name="SourceItem[0].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[0].ItemID" Type="Ref">/My Computer/calculate_Dewpoint.vi</Property>
             <Property Name="SourceItem[0].VIPropertiesItemCount" Type="Int">1</Property>
@@ -203,41 +203,43 @@
             <Property Name="SourceItem[20].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[20].ItemID" Type="Ref">/My Computer/mph_to_mps.vi</Property>
             <Property Name="SourceItem[21].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
+            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/read_boolean_setting.vi</Property>
             <Property Name="SourceItem[22].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
+            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
             <Property Name="SourceItem[23].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
+            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
             <Property Name="SourceItem[24].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
+            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
             <Property Name="SourceItem[25].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
+            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
             <Property Name="SourceItem[26].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
+            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
             <Property Name="SourceItem[27].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
+            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
             <Property Name="SourceItem[28].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
+            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
             <Property Name="SourceItem[29].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[29].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
+            <Property Name="SourceItem[29].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
             <Property Name="SourceItem[3].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[3].ItemID" Type="Ref">/My Computer/Control 2.ctl</Property>
             <Property Name="SourceItem[30].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[30].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
+            <Property Name="SourceItem[30].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
             <Property Name="SourceItem[31].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[31].ItemID" Type="Ref">/My Computer/weather.user.settings.ini</Property>
+            <Property Name="SourceItem[31].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
             <Property Name="SourceItem[32].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[32].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
+            <Property Name="SourceItem[32].ItemID" Type="Ref">/My Computer/weather.user.settings.ini</Property>
             <Property Name="SourceItem[33].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[33].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
+            <Property Name="SourceItem[33].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
             <Property Name="SourceItem[34].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[34].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
+            <Property Name="SourceItem[34].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
             <Property Name="SourceItem[35].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[35].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
+            <Property Name="SourceItem[35].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
             <Property Name="SourceItem[36].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[36].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
+            <Property Name="SourceItem[36].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
             <Property Name="SourceItem[37].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[37].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
+            <Property Name="SourceItem[37].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
+            <Property Name="SourceItem[38].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[38].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
             <Property Name="SourceItem[4].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[4].ItemID" Type="Ref">/My Computer/data_error_Barometer.vi</Property>
             <Property Name="SourceItem[5].Inclusion" Type="Str">Always Included</Property>
