@@ -53,6 +53,7 @@
       <Item Name="write_integer_setting.vi" Type="VI" URL="write_integer_setting.vi"/>
       <Item Name="write_to_database.vi" Type="VI" URL="write_to_database.vi"/>
       <Item Name="multiplier.vi" Type="VI" URL="multiplier.vi"/>
+      <Item Name="CircularBuffer.vi" Type="VI" URL="/C/Documents and Settings/Administrator/Bureaublad/CircularBuffer.vi"/>
       <Item Name="Dependencies" Type="Dependencies"/>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="HiSPARC Weather" Type="EXE">
