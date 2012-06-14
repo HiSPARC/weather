@@ -278,7 +278,7 @@
             <Property Name="VersionInfoLegalCopyright" Type="Str">Copyright © 2011 Nikhef</Property>
             <Property Name="VersionInfoProductName" Type="Str">Vantage_Pro_Weather_software</Property>
          </Item>
-         <Item Name="hisparcweather" Type="EXE">
+         <Item Name="hisparcweather2" Type="EXE">
             <Property Name="Absolute[0]" Type="Bool">false</Property>
             <Property Name="Absolute[1]" Type="Bool">false</Property>
             <Property Name="Absolute[2]" Type="Bool">false</Property>
@@ -293,7 +293,7 @@
             <Property Name="ApplicationID" Type="Str">{90FD4D1A-551B-4987-9FDB-F6A942FC0DF4}</Property>
             <Property Name="ApplicationName" Type="Str">hisparcweather.exe</Property>
             <Property Name="AutoIncrement" Type="Bool">false</Property>
-            <Property Name="BuildName" Type="Str">hisparcweather</Property>
+            <Property Name="BuildName" Type="Str">hisparcweather2</Property>
             <Property Name="CommandLineArguments" Type="Bool">false</Property>
             <Property Name="CopyErrors" Type="Bool">false</Property>
             <Property Name="DebuggingEXE" Type="Bool">false</Property>
@@ -319,11 +319,11 @@
             <Property Name="ININame" Type="Str">LabVIEW.ini</Property>
             <Property Name="LOGID" Type="Str">{9AAFFF98-639F-40C3-B209-63A6D6F2047D}</Property>
             <Property Name="MathScript" Type="Bool">false</Property>
-            <Property Name="Path[0]" Type="Path">../../builds/Weerstation/hisparcweather/internal.llb</Property>
-            <Property Name="Path[1]" Type="Path">../../builds/Weerstation/hisparcweather</Property>
-            <Property Name="Path[2]" Type="Path">../../builds/Weerstation/hisparcweather/data</Property>
+            <Property Name="Path[0]" Type="Path">../../builds/Weerstation/hisparcweather2/internal.llb</Property>
+            <Property Name="Path[1]" Type="Path">../../builds/Weerstation/hisparcweather2</Property>
+            <Property Name="Path[2]" Type="Path">../../builds/Weerstation/hisparcweather2/data</Property>
             <Property Name="ShowHWConfig" Type="Bool">false</Property>
-            <Property Name="SourceInfoItemCount" Type="Int">41</Property>
+            <Property Name="SourceInfoItemCount" Type="Int">29</Property>
             <Property Name="SourceItem[0].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[0].ItemID" Type="Ref">/My Computer/calculate_Dewpoint.vi</Property>
             <Property Name="SourceItem[0].VIPropertiesItemCount" Type="Int">1</Property>
@@ -332,83 +332,59 @@
             <Property Name="SourceItem[1].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[1].ItemID" Type="Ref">/My Computer/calculate_wind_chill.vi</Property>
             <Property Name="SourceItem[10].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[10].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[10].ItemID" Type="Ref">/My Computer/read_boolean_setting.vi</Property>
             <Property Name="SourceItem[11].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[11].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[11].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
             <Property Name="SourceItem[12].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[12].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[12].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
             <Property Name="SourceItem[13].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[13].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[13].ItemID" Type="Ref">/My Computer/set_console_time.vi</Property>
             <Property Name="SourceItem[14].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[14].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[14].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
             <Property Name="SourceItem[15].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[15].ItemID" Type="Ref">/My Computer/Fahrenheit_to_Celsius.vi</Property>
+            <Property Name="SourceItem[15].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
             <Property Name="SourceItem[16].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[16].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[16].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
             <Property Name="SourceItem[17].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[17].ItemID" Type="Ref">/My Computer/inch_to_mm.vi</Property>
+            <Property Name="SourceItem[17].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
             <Property Name="SourceItem[18].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[18].ItemID" Type="Ref">/My Computer/inHg_to_hPa.vi</Property>
-            <Property Name="SourceItem[19].Inclusion" Type="Str">Startup VI</Property>
-            <Property Name="SourceItem[19].ItemID" Type="Ref">/My Computer/Main.vi</Property>
+            <Property Name="SourceItem[18].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
+            <Property Name="SourceItem[19].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[19].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
             <Property Name="SourceItem[2].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[2].ItemID" Type="Ref">/My Computer/Control 1.ctl</Property>
             <Property Name="SourceItem[20].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[20].ItemID" Type="Ref">/My Computer/mph_to_mps.vi</Property>
+            <Property Name="SourceItem[20].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
             <Property Name="SourceItem[21].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/PC_time_to_GPS_time.vi</Property>
+            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
             <Property Name="SourceItem[22].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/read_boolean_setting.vi</Property>
+            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/weather.user.settings.ini</Property>
             <Property Name="SourceItem[23].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
+            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
             <Property Name="SourceItem[24].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
+            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
             <Property Name="SourceItem[25].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/set_console_time.vi</Property>
+            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
             <Property Name="SourceItem[26].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
+            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
             <Property Name="SourceItem[27].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
+            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
             <Property Name="SourceItem[28].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
-            <Property Name="SourceItem[29].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[29].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
+            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
             <Property Name="SourceItem[3].Inclusion" Type="Str">Always Included</Property>
             <Property Name="SourceItem[3].ItemID" Type="Ref">/My Computer/Control 2.ctl</Property>
-            <Property Name="SourceItem[30].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[30].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
-            <Property Name="SourceItem[31].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[31].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
-            <Property Name="SourceItem[32].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[32].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
-            <Property Name="SourceItem[33].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[33].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
-            <Property Name="SourceItem[34].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[34].ItemID" Type="Ref">/My Computer/weather.user.settings.ini</Property>
-            <Property Name="SourceItem[35].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[35].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
-            <Property Name="SourceItem[36].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[36].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
-            <Property Name="SourceItem[37].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[37].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
-            <Property Name="SourceItem[38].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[38].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
-            <Property Name="SourceItem[39].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[39].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
             <Property Name="SourceItem[4].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[4].ItemID" Type="Ref"></Property>
-            <Property Name="SourceItem[40].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[40].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
+            <Property Name="SourceItem[4].ItemID" Type="Ref">/My Computer/Fahrenheit_to_Celsius.vi</Property>
             <Property Name="SourceItem[5].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[5].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[5].ItemID" Type="Ref">/My Computer/inch_to_mm.vi</Property>
             <Property Name="SourceItem[6].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[6].ItemID" Type="Ref"></Property>
-            <Property Name="SourceItem[7].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[7].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[6].ItemID" Type="Ref">/My Computer/inHg_to_hPa.vi</Property>
+            <Property Name="SourceItem[7].Inclusion" Type="Str">Startup VI</Property>
+            <Property Name="SourceItem[7].ItemID" Type="Ref">/My Computer/Main.vi</Property>
             <Property Name="SourceItem[8].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[8].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[8].ItemID" Type="Ref">/My Computer/mph_to_mps.vi</Property>
             <Property Name="SourceItem[9].Inclusion" Type="Str">Always Included</Property>
-            <Property Name="SourceItem[9].ItemID" Type="Ref"></Property>
+            <Property Name="SourceItem[9].ItemID" Type="Ref">/My Computer/PC_time_to_GPS_time.vi</Property>
             <Property Name="StripLib" Type="Bool">true</Property>
             <Property Name="SupportedLanguageCount" Type="Int">0</Property>
             <Property Name="TLBID" Type="Str">{BEA6E6CB-8CF2-4E84-A666-C03CCCFDFC6D}</Property>
@@ -720,6 +696,319 @@
             <Property Name="VersionInfoFileVersionPatch" Type="Int">0</Property>
             <Property Name="VersionInfoInternalName" Type="Str">hisparcweather</Property>
             <Property Name="VersionInfoLegalCopyright" Type="Str">Copyright © 2011 Nikhef</Property>
+            <Property Name="VersionInfoProductName" Type="Str">hisparcweather</Property>
+         </Item>
+         <Item Name="20120615" Type="EXE">
+            <Property Name="Absolute[0]" Type="Bool">false</Property>
+            <Property Name="Absolute[1]" Type="Bool">false</Property>
+            <Property Name="Absolute[2]" Type="Bool">false</Property>
+            <Property Name="ActiveXInfoEnumCLSIDsItemCount" Type="Int">0</Property>
+            <Property Name="ActiveXInfoMajorVersion" Type="Int">0</Property>
+            <Property Name="ActiveXInfoMinorVersion" Type="Int">0</Property>
+            <Property Name="ActiveXInfoObjCLSIDsItemCount" Type="Int">0</Property>
+            <Property Name="ActiveXInfoProgIDPrefix" Type="Str"></Property>
+            <Property Name="ActiveXServerName" Type="Str"></Property>
+            <Property Name="AliasID" Type="Str">{DF8A4C8C-4507-49B4-AD47-EE354DB4BA72}</Property>
+            <Property Name="AliasName" Type="Str">Project.aliases</Property>
+            <Property Name="ApplicationID" Type="Str">{A4F62DBB-4384-4675-B6E0-B4C53B9940E2}</Property>
+            <Property Name="ApplicationName" Type="Str">20120615.exe</Property>
+            <Property Name="AutoIncrement" Type="Bool">false</Property>
+            <Property Name="BuildName" Type="Str">20120615</Property>
+            <Property Name="CommandLineArguments" Type="Bool">false</Property>
+            <Property Name="CopyErrors" Type="Bool">false</Property>
+            <Property Name="DebuggingEXE" Type="Bool">false</Property>
+            <Property Name="DebugServerWaitOnLaunch" Type="Bool">false</Property>
+            <Property Name="DefaultLanguage" Type="Str">English</Property>
+            <Property Name="DependencyApplyDestination" Type="Bool">true</Property>
+            <Property Name="DependencyApplyInclusion" Type="Bool">true</Property>
+            <Property Name="DependencyApplyProperties" Type="Bool">true</Property>
+            <Property Name="DependencyFolderDestination" Type="Int">0</Property>
+            <Property Name="DependencyFolderInclusion" Type="Str">As needed</Property>
+            <Property Name="DependencyFolderPropertiesItemCount" Type="Int">0</Property>
+            <Property Name="DestinationID[0]" Type="Str">{EEFA51EE-5BFF-4DBC-B57E-C26B95C4545C}</Property>
+            <Property Name="DestinationID[1]" Type="Str">{EEFA51EE-5BFF-4DBC-B57E-C26B95C4545C}</Property>
+            <Property Name="DestinationID[2]" Type="Str">{843B07D4-DBAE-4E00-B084-E02BE25194D4}</Property>
+            <Property Name="DestinationItemCount" Type="Int">3</Property>
+            <Property Name="DestinationName[0]" Type="Str">20120615.exe</Property>
+            <Property Name="DestinationName[1]" Type="Str">Destination Directory</Property>
+            <Property Name="DestinationName[2]" Type="Str">Support Directory</Property>
+            <Property Name="Disconnect" Type="Bool">false</Property>
+            <Property Name="IncludeHWConfig" Type="Bool">false</Property>
+            <Property Name="IncludeSCC" Type="Bool">true</Property>
+            <Property Name="INIID" Type="Str">{39466EC4-057E-4601-B20C-D4D7C1E78B1A}</Property>
+            <Property Name="ININame" Type="Str">LabVIEW.ini</Property>
+            <Property Name="LOGID" Type="Str">{2B62C694-6AE9-43E8-904D-8B0E1C50C418}</Property>
+            <Property Name="MathScript" Type="Bool">false</Property>
+            <Property Name="Path[0]" Type="Path">../../builds/Weerstation/20120615/internal.llb</Property>
+            <Property Name="Path[1]" Type="Path">../../builds/Weerstation/20120615</Property>
+            <Property Name="Path[2]" Type="Path">../../builds/Weerstation/20120615/data</Property>
+            <Property Name="ShowHWConfig" Type="Bool">false</Property>
+            <Property Name="SourceInfoItemCount" Type="Int">47</Property>
+            <Property Name="SourceItem[0].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[0].ItemID" Type="Ref">/My Computer/calculate_10minaverage_wind_chill.vi</Property>
+            <Property Name="SourceItem[1].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[1].ItemID" Type="Ref">/My Computer/calculate_Dewpoint.vi</Property>
+            <Property Name="SourceItem[10].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[10].ItemID" Type="Ref">/My Computer/database_data_error_heat_index.vi</Property>
+            <Property Name="SourceItem[11].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[11].ItemID" Type="Ref">/My Computer/database_data_error_Humidity.vi</Property>
+            <Property Name="SourceItem[12].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[12].ItemID" Type="Ref">/My Computer/database_data_error_rain_rate.vi</Property>
+            <Property Name="SourceItem[13].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[13].ItemID" Type="Ref">/My Computer/database_data_error_solar_radiation.vi</Property>
+            <Property Name="SourceItem[14].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[14].ItemID" Type="Ref">/My Computer/database_data_error_Temperature.vi</Property>
+            <Property Name="SourceItem[15].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[15].ItemID" Type="Ref">/My Computer/database_data_error_UV_index.vi</Property>
+            <Property Name="SourceItem[16].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[16].ItemID" Type="Ref">/My Computer/database_data_error_wind_direction.vi</Property>
+            <Property Name="SourceItem[17].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[17].ItemID" Type="Ref">/My Computer/database_data_error_wind_speed.vi</Property>
+            <Property Name="SourceItem[18].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[18].ItemID" Type="Ref">/My Computer/Fahrenheit_to_Celsius.vi</Property>
+            <Property Name="SourceItem[19].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[19].ItemID" Type="Ref">/My Computer/Generate_graph_data.vi</Property>
+            <Property Name="SourceItem[2].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[2].ItemID" Type="Ref">/My Computer/calculate_wind_chill.vi</Property>
+            <Property Name="SourceItem[20].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[20].ItemID" Type="Ref">/My Computer/Generate_graph_time_and_data.vi</Property>
+            <Property Name="SourceItem[21].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/Get File Info.vi</Property>
+            <Property Name="SourceItem[22].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/Windows SYSTEMTIME to String.vi</Property>
+            <Property Name="SourceItem[23].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/inch_to_mm.vi</Property>
+            <Property Name="SourceItem[24].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/inHg_to_hPa.vi</Property>
+            <Property Name="SourceItem[25].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/LabVIEW.ini</Property>
+            <Property Name="SourceItem[26].Inclusion" Type="Str">Startup VI</Property>
+            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/Main.vi</Property>
+            <Property Name="SourceItem[27].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/mph_to_mps.vi</Property>
+            <Property Name="SourceItem[28].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/PC_time_to_GPS_time.vi</Property>
+            <Property Name="SourceItem[29].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[29].ItemID" Type="Ref">/My Computer/read_boolean_setting.vi</Property>
+            <Property Name="SourceItem[3].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[3].ItemID" Type="Ref">/My Computer/Com-port_error.vi</Property>
+            <Property Name="SourceItem[30].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[30].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
+            <Property Name="SourceItem[31].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[31].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
+            <Property Name="SourceItem[32].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[32].ItemID" Type="Ref">/My Computer/set_console_time.vi</Property>
+            <Property Name="SourceItem[33].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[33].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
+            <Property Name="SourceItem[34].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[34].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
+            <Property Name="SourceItem[35].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[35].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
+            <Property Name="SourceItem[36].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[36].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
+            <Property Name="SourceItem[37].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[37].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
+            <Property Name="SourceItem[38].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[38].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
+            <Property Name="SourceItem[39].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[39].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
+            <Property Name="SourceItem[4].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[4].ItemID" Type="Ref">/My Computer/Control 1.ctl</Property>
+            <Property Name="SourceItem[40].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[40].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
+            <Property Name="SourceItem[41].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[41].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
+            <Property Name="SourceItem[42].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[42].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
+            <Property Name="SourceItem[43].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[43].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
+            <Property Name="SourceItem[44].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[44].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
+            <Property Name="SourceItem[45].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[45].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
+            <Property Name="SourceItem[46].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[46].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
+            <Property Name="SourceItem[5].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[5].ItemID" Type="Ref">/My Computer/Control 2.ctl</Property>
+            <Property Name="SourceItem[6].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[6].ItemID" Type="Ref">/My Computer/data_error_indicator_and_graph.vi</Property>
+            <Property Name="SourceItem[7].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[7].ItemID" Type="Ref">/My Computer/database_data_error_barometer.vi</Property>
+            <Property Name="SourceItem[8].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[8].ItemID" Type="Ref">/My Computer/database_data_error_dew_point.vi</Property>
+            <Property Name="SourceItem[9].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[9].ItemID" Type="Ref">/My Computer/database_data_error_Evapotranspiration_rate.vi</Property>
+            <Property Name="StripLib" Type="Bool">false</Property>
+            <Property Name="SupportedLanguageCount" Type="Int">0</Property>
+            <Property Name="TLBID" Type="Str">{F8CC6344-1E40-4074-A799-6EEBA4917FDE}</Property>
+            <Property Name="UseFFRTE" Type="Bool">false</Property>
+            <Property Name="VersionInfoCompanyName" Type="Str">Nikhef</Property>
+            <Property Name="VersionInfoFileDescription" Type="Str"></Property>
+            <Property Name="VersionInfoFileType" Type="Int">1</Property>
+            <Property Name="VersionInfoFileVersionBuild" Type="Int">0</Property>
+            <Property Name="VersionInfoFileVersionMajor" Type="Int">1</Property>
+            <Property Name="VersionInfoFileVersionMinor" Type="Int">0</Property>
+            <Property Name="VersionInfoFileVersionPatch" Type="Int">0</Property>
+            <Property Name="VersionInfoInternalName" Type="Str">20120615</Property>
+            <Property Name="VersionInfoLegalCopyright" Type="Str">Copyright © 2012 Nikhef</Property>
+            <Property Name="VersionInfoProductName" Type="Str">20120615</Property>
+         </Item>
+         <Item Name="hisparcweather" Type="EXE">
+            <Property Name="Absolute[0]" Type="Bool">false</Property>
+            <Property Name="Absolute[1]" Type="Bool">false</Property>
+            <Property Name="Absolute[2]" Type="Bool">false</Property>
+            <Property Name="ActiveXInfoEnumCLSIDsItemCount" Type="Int">0</Property>
+            <Property Name="ActiveXInfoMajorVersion" Type="Int">0</Property>
+            <Property Name="ActiveXInfoMinorVersion" Type="Int">0</Property>
+            <Property Name="ActiveXInfoObjCLSIDsItemCount" Type="Int">0</Property>
+            <Property Name="ActiveXInfoProgIDPrefix" Type="Str"></Property>
+            <Property Name="ActiveXServerName" Type="Str"></Property>
+            <Property Name="AliasID" Type="Str">{C91EC649-2224-46F7-9FF1-3C8789446C19}</Property>
+            <Property Name="AliasName" Type="Str">Project.aliases</Property>
+            <Property Name="ApplicationID" Type="Str">{DE6AEEB2-D3A5-4697-BE4B-95BF9A4773AA}</Property>
+            <Property Name="ApplicationName" Type="Str">hisparcweather.exe</Property>
+            <Property Name="AutoIncrement" Type="Bool">false</Property>
+            <Property Name="BuildName" Type="Str">hisparcweather</Property>
+            <Property Name="CommandLineArguments" Type="Bool">false</Property>
+            <Property Name="CopyErrors" Type="Bool">false</Property>
+            <Property Name="DebuggingEXE" Type="Bool">false</Property>
+            <Property Name="DebugServerWaitOnLaunch" Type="Bool">false</Property>
+            <Property Name="DefaultLanguage" Type="Str">English</Property>
+            <Property Name="DependencyApplyDestination" Type="Bool">true</Property>
+            <Property Name="DependencyApplyInclusion" Type="Bool">true</Property>
+            <Property Name="DependencyApplyProperties" Type="Bool">true</Property>
+            <Property Name="DependencyFolderDestination" Type="Int">0</Property>
+            <Property Name="DependencyFolderInclusion" Type="Str">As needed</Property>
+            <Property Name="DependencyFolderPropertiesItemCount" Type="Int">0</Property>
+            <Property Name="DestinationID[0]" Type="Str">{D4C7BE61-909A-4AF8-9146-1AAB60E4C5BA}</Property>
+            <Property Name="DestinationID[1]" Type="Str">{D4C7BE61-909A-4AF8-9146-1AAB60E4C5BA}</Property>
+            <Property Name="DestinationID[2]" Type="Str">{D884911E-8283-43D4-8DDA-046A674E6DA3}</Property>
+            <Property Name="DestinationItemCount" Type="Int">3</Property>
+            <Property Name="DestinationName[0]" Type="Str">hisparcweather.exe</Property>
+            <Property Name="DestinationName[1]" Type="Str">Destination Directory</Property>
+            <Property Name="DestinationName[2]" Type="Str">Support Directory</Property>
+            <Property Name="Disconnect" Type="Bool">true</Property>
+            <Property Name="IncludeHWConfig" Type="Bool">false</Property>
+            <Property Name="IncludeSCC" Type="Bool">true</Property>
+            <Property Name="INIID" Type="Str">{7C8988C9-101B-4C82-B05A-D6982BDAFBC2}</Property>
+            <Property Name="ININame" Type="Str">LabVIEW.ini</Property>
+            <Property Name="LOGID" Type="Str">{BF2C034D-0E60-445A-915C-F3FA253FA2EA}</Property>
+            <Property Name="MathScript" Type="Bool">false</Property>
+            <Property Name="Path[0]" Type="Path">../../builds/Weerstation/hisparcweather/internal.llb</Property>
+            <Property Name="Path[1]" Type="Path">../../builds/Weerstation/hisparcweather</Property>
+            <Property Name="Path[2]" Type="Path">../../builds/Weerstation/hisparcweather/data</Property>
+            <Property Name="ShowHWConfig" Type="Bool">false</Property>
+            <Property Name="SourceInfoItemCount" Type="Int">47</Property>
+            <Property Name="SourceItem[0].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[0].ItemID" Type="Ref">/My Computer/calculate_10minaverage_wind_chill.vi</Property>
+            <Property Name="SourceItem[0].VIPropertiesItemCount" Type="Int">1</Property>
+            <Property Name="SourceItem[0].VIPropertiesSettingOption[0]" Type="Str">Remove panel</Property>
+            <Property Name="SourceItem[0].VIPropertiesVISetting[0]" Type="Bool">false</Property>
+            <Property Name="SourceItem[1].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[1].ItemID" Type="Ref">/My Computer/calculate_Dewpoint.vi</Property>
+            <Property Name="SourceItem[10].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[10].ItemID" Type="Ref">/My Computer/database_data_error_heat_index.vi</Property>
+            <Property Name="SourceItem[11].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[11].ItemID" Type="Ref">/My Computer/database_data_error_Humidity.vi</Property>
+            <Property Name="SourceItem[12].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[12].ItemID" Type="Ref">/My Computer/database_data_error_rain_rate.vi</Property>
+            <Property Name="SourceItem[13].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[13].ItemID" Type="Ref">/My Computer/database_data_error_solar_radiation.vi</Property>
+            <Property Name="SourceItem[14].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[14].ItemID" Type="Ref">/My Computer/database_data_error_Temperature.vi</Property>
+            <Property Name="SourceItem[15].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[15].ItemID" Type="Ref">/My Computer/database_data_error_UV_index.vi</Property>
+            <Property Name="SourceItem[16].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[16].ItemID" Type="Ref">/My Computer/database_data_error_wind_direction.vi</Property>
+            <Property Name="SourceItem[17].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[17].ItemID" Type="Ref">/My Computer/database_data_error_wind_speed.vi</Property>
+            <Property Name="SourceItem[18].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[18].ItemID" Type="Ref">/My Computer/Fahrenheit_to_Celsius.vi</Property>
+            <Property Name="SourceItem[19].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[19].ItemID" Type="Ref">/My Computer/Generate_graph_data.vi</Property>
+            <Property Name="SourceItem[2].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[2].ItemID" Type="Ref">/My Computer/calculate_wind_chill.vi</Property>
+            <Property Name="SourceItem[20].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[20].ItemID" Type="Ref">/My Computer/Generate_graph_time_and_data.vi</Property>
+            <Property Name="SourceItem[21].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[21].ItemID" Type="Ref">/My Computer/Get File Info.vi</Property>
+            <Property Name="SourceItem[22].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[22].ItemID" Type="Ref">/My Computer/Windows SYSTEMTIME to String.vi</Property>
+            <Property Name="SourceItem[23].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[23].ItemID" Type="Ref">/My Computer/inch_to_mm.vi</Property>
+            <Property Name="SourceItem[24].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[24].ItemID" Type="Ref">/My Computer/inHg_to_hPa.vi</Property>
+            <Property Name="SourceItem[25].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[25].ItemID" Type="Ref">/My Computer/LabVIEW.ini</Property>
+            <Property Name="SourceItem[26].Inclusion" Type="Str">Startup VI</Property>
+            <Property Name="SourceItem[26].ItemID" Type="Ref">/My Computer/Main.vi</Property>
+            <Property Name="SourceItem[27].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[27].ItemID" Type="Ref">/My Computer/mph_to_mps.vi</Property>
+            <Property Name="SourceItem[28].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[28].ItemID" Type="Ref">/My Computer/PC_time_to_GPS_time.vi</Property>
+            <Property Name="SourceItem[29].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[29].ItemID" Type="Ref">/My Computer/read_boolean_setting.vi</Property>
+            <Property Name="SourceItem[3].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[3].ItemID" Type="Ref">/My Computer/Com-port_error.vi</Property>
+            <Property Name="SourceItem[30].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[30].ItemID" Type="Ref">/My Computer/read_integer_setting.vi</Property>
+            <Property Name="SourceItem[31].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[31].ItemID" Type="Ref">/My Computer/Read_Weather_Parameters.vi</Property>
+            <Property Name="SourceItem[32].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[32].ItemID" Type="Ref">/My Computer/set_console_time.vi</Property>
+            <Property Name="SourceItem[33].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[33].ItemID" Type="Ref">/My Computer/settings_file.vi</Property>
+            <Property Name="SourceItem[34].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[34].ItemID" Type="Ref">/My Computer/SiUSBXp.dll</Property>
+            <Property Name="SourceItem[35].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[35].ItemID" Type="Ref">/My Computer/VantagePro.dll</Property>
+            <Property Name="SourceItem[36].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[36].ItemID" Type="Ref">/My Computer/VP_Connect.vi</Property>
+            <Property Name="SourceItem[37].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[37].ItemID" Type="Ref">/My Computer/VP_Disconnect.vi</Property>
+            <Property Name="SourceItem[38].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[38].ItemID" Type="Ref">/My Computer/VP_SetRainCollector.vi</Property>
+            <Property Name="SourceItem[39].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[39].ItemID" Type="Ref">/My Computer/VP_SetUnits.vi</Property>
+            <Property Name="SourceItem[4].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[4].ItemID" Type="Ref">/My Computer/Control 1.ctl</Property>
+            <Property Name="SourceItem[40].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[40].ItemID" Type="Ref">/My Computer/weather.factory.settings.ini</Property>
+            <Property Name="SourceItem[41].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[41].ItemID" Type="Ref">/My Computer/weatherunitscontrol.ctl</Property>
+            <Property Name="SourceItem[42].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[42].ItemID" Type="Ref">/My Computer/Weerstation.aliases</Property>
+            <Property Name="SourceItem[43].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[43].ItemID" Type="Ref">/My Computer/Weerstation.lvlps</Property>
+            <Property Name="SourceItem[44].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[44].ItemID" Type="Ref">/My Computer/write_boolean_setting.vi</Property>
+            <Property Name="SourceItem[45].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[45].ItemID" Type="Ref">/My Computer/write_integer_setting.vi</Property>
+            <Property Name="SourceItem[46].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[46].ItemID" Type="Ref">/My Computer/write_to_database.vi</Property>
+            <Property Name="SourceItem[5].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[5].ItemID" Type="Ref">/My Computer/Control 2.ctl</Property>
+            <Property Name="SourceItem[6].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[6].ItemID" Type="Ref">/My Computer/data_error_indicator_and_graph.vi</Property>
+            <Property Name="SourceItem[7].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[7].ItemID" Type="Ref">/My Computer/database_data_error_barometer.vi</Property>
+            <Property Name="SourceItem[8].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[8].ItemID" Type="Ref">/My Computer/database_data_error_dew_point.vi</Property>
+            <Property Name="SourceItem[9].Inclusion" Type="Str">Always Included</Property>
+            <Property Name="SourceItem[9].ItemID" Type="Ref">/My Computer/database_data_error_Evapotranspiration_rate.vi</Property>
+            <Property Name="StripLib" Type="Bool">true</Property>
+            <Property Name="SupportedLanguageCount" Type="Int">0</Property>
+            <Property Name="TLBID" Type="Str">{9F17C685-A529-4E77-A79B-2C18DEC23FB5}</Property>
+            <Property Name="UseFFRTE" Type="Bool">false</Property>
+            <Property Name="VersionInfoCompanyName" Type="Str">Nikhef</Property>
+            <Property Name="VersionInfoFileDescription" Type="Str"></Property>
+            <Property Name="VersionInfoFileType" Type="Int">1</Property>
+            <Property Name="VersionInfoFileVersionBuild" Type="Int">0</Property>
+            <Property Name="VersionInfoFileVersionMajor" Type="Int">1</Property>
+            <Property Name="VersionInfoFileVersionMinor" Type="Int">0</Property>
+            <Property Name="VersionInfoFileVersionPatch" Type="Int">0</Property>
+            <Property Name="VersionInfoInternalName" Type="Str">hisparcweather</Property>
+            <Property Name="VersionInfoLegalCopyright" Type="Str">Copyright © 2012 Nikhef</Property>
             <Property Name="VersionInfoProductName" Type="Str">hisparcweather</Property>
          </Item>
       </Item>
