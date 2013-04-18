@@ -2,6 +2,7 @@
 *.lvlps
 *.aliases
 builds/
+_build/
 
 # OS generated files
 .DS_Store*
