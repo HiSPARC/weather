@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>5. Graphs &mdash; HiSPARC Weather DAQ 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/hisparc_style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="HiSPARC Weather DAQ 0.1 documentation" href="index.html" />
+    <link rel="next" title="6. Error codes" href="error_codes.html" />
+    <link rel="prev" title="4. Sensor ranges and accuracy" href="sensors.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="error_codes.html" title="6. Error codes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sensors.html" title="4. Sensor ranges and accuracy"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="graphs">
+<h1>5. Graphs<a class="headerlink" href="#graphs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="current-weather-data">
+<h2>5.1. Current weather data<a class="headerlink" href="#current-weather-data" title="Permalink to this headline">¶</a></h2>
+<p>Data of active sensors is updated and presented on tab page 1. Lowest
+and highest values for each individual parameter are recorded (since the
+start of the datataking). The sensor readings are updated every 5
+seconds (some Davis sensors require a minimum time interval before a new
+measurement can be produced. For details, consult the Davis manuals
+shipped with your weather station). In addition, the &#8216;GPS time&#8217; is
+displayed (will only be different from the pc/console time when a cosmic
+ray set-up with properly functioning GPS antenne is running on the same
+computer. This GPS time is required to synchronise cosmic ray data and
+weather station measurements. When running the weather station in
+&#8216;stand-alone mode&#8217;, please adjust your pc clock to GPS time! The weather
+station console also provides a weather forecast. Forecasts are based on
+(at least) 3 hours of recent console data.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/weatherdaq.png"><img alt="_images/weatherdaq.png" src="_images/weatherdaq.png" style="width: 70%;" /></a>
+<p class="caption">The Current weather data tab (click to enlarge)</p>
+</div>
+</div>
+<div class="section" id="last-hour-weather-history">
+<h2>5.2. Last hour weather history<a class="headerlink" href="#last-hour-weather-history" title="Permalink to this headline">¶</a></h2>
+<p>Data of active sensors collected over past 60 minutes is presented at a
+separate tab page.</p>
+<p>To limit the number of entries in the plots, 1 minute averages are
+calculated (this implies that after starting the software it will take 2
+minutes to see the first entries in these plots).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/weatherdaq_hour.png"><img alt="_images/weatherdaq_hour.png" src="_images/weatherdaq_hour.png" style="width: 70%;" /></a>
+<p class="caption">The Last hour weather history tab (click to enlarge)</p>
+</div>
+</div>
+<div class="section" id="last-48h-weather-history">
+<h2>5.3. Last 48h weather history<a class="headerlink" href="#last-48h-weather-history" title="Permalink to this headline">¶</a></h2>
+<p>Data of active sensors collected over past 48 hours is presented at a
+separate tab page.</p>
+<p>To limit the number of entries in the plots, 10 minute averages are
+calculated (this implies that after starting the software it will take
+20 minutes to see the first entries in these plots).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/weatherdaq_48hours.png"><img alt="_images/weatherdaq_48hours.png" src="_images/weatherdaq_48hours.png" style="width: 70%;" /></a>
+<p class="caption">The Last 48h weather history tab (click to enlarge)</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/header.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">5. Graphs</a><ul>
+<li><a class="reference internal" href="#current-weather-data">5.1. Current weather data</a></li>
+<li><a class="reference internal" href="#last-hour-weather-history">5.2. Last hour weather history</a></li>
+<li><a class="reference internal" href="#last-48h-weather-history">5.3. Last 48h weather history</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sensors.html"
+                        title="previous chapter">4. Sensor ranges and accuracy</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="error_codes.html"
+                        title="next chapter">6. Error codes</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/graphs.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="error_codes.html" title="6. Error codes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sensors.html" title="4. Sensor ranges and accuracy"
+             >previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, HiSPARC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

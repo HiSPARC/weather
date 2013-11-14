@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>6. Error codes &mdash; HiSPARC Weather DAQ 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/hisparc_style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="HiSPARC Weather DAQ 0.1 documentation" href="index.html" />
+    <link rel="next" title="7. LabView Development" href="development.html" />
+    <link rel="prev" title="5. Graphs" href="graphs.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="development.html" title="7. LabView Development"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="graphs.html" title="5. Graphs"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="error-codes">
+<h1>6. Error codes<a class="headerlink" href="#error-codes" title="Permalink to this headline">¶</a></h1>
+<p>The HiSPARC weather station data acquisition program generates
+status/error messages in &#8216;Status messages &amp; error reports&#8217; tab to inform
+you about the progress of the start/end process and when errors occur.
+Here is a screenshot of this screen, below is explained what you can see
+here.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/weatherdaq_status.png"><img alt="_images/weatherdaq_status.png" src="_images/weatherdaq_status.png" style="width: 70%;" /></a>
+<p class="caption">The Status/Error tab (click to enlarge)</p>
+</div>
+<div class="section" id="status">
+<h2>6.1. Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p>The &#8216;Status station&#8217; block (left lower corner) provides some (crucial)
+general information:</p>
+<ul class="simple">
+<li><tt class="code docutils literal"><span class="pre">Weather</span> <span class="pre">station</span> <span class="pre">connected?</span></tt> tells whether the connection
+between pc and weather station console is properly working</li>
+<li><tt class="code docutils literal"><span class="pre">Buffer</span> <span class="pre">connected?</span></tt> is required for data transmission in DAQ mode</li>
+<li><tt class="code docutils literal"><span class="pre">PC</span> <span class="pre">time</span> <span class="pre">=</span> <span class="pre">Console</span> <span class="pre">time?</span></tt> indicates whether the pc and
+console-display are synchronised</li>
+<li><tt class="code docutils literal"><span class="pre">Run-time</span> <span class="pre">error</span></tt> refers to a fatal error that occurred (see error
+messages)</li>
+<li><tt class="code docutils literal"><span class="pre">GPS</span> <span class="pre">time</span> <span class="pre">correction</span></tt> refers to the offset between pc clock and
+the GPS time as obtained by your cosmic ray set-up</li>
+<li><tt class="code docutils literal"><span class="pre">GPS</span> <span class="pre">time</span> <span class="pre">last</span> <span class="pre">data</span></tt> indicates the last time data is read from
+the weather station console</li>
+</ul>
+<p>Status indoor and outdoor sensors show which of the sensors (you have to
+make a selection on the &#8216;Settings&#8217; tab!) is read out correctly (green),
+fails (red) or is not part of you set of sensors (grey - depends on your
+hardware/selection)</p>
+<p>The voltage on the batteries in the weather station console is sampled.
+For most console models this provides accurate information on whether
+the back-up batteries need to be replaced. Some models give a random
+voltage when no batteries are inserted. Make sure that your console
+indeed has healthy batteries!</p>
+</div>
+<div class="section" id="messages">
+<h2>6.2. Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<p>The &#8216;Status messages &amp; error reports&#8217; window logs relevant information
+after (re-)start of the weather station. The messages inform you about
+occurrences in the system. In addition to the following messages (which
+are usually the result of user interference):</p>
+<div class="highlight-python"><pre>Start HiSPARC weather station DAQ.
+Stop HiSPARC weather station DAQ.
+Restart weather station from user initialisation file.
+Re-initialise weather station from default initialisation file</pre>
+</div>
+<div class="section" id="status-1xx">
+<h3>6.2.1. Status (1xx)<a class="headerlink" href="#status-1xx" title="Permalink to this headline">¶</a></h3>
+<p>Status messages may be issued which inform about the initialisation
+process of the weather station or document when the user pressed a
+button. They also confirm whether an action was successfully executed.
+When &#8216;DAQ MODE&#8217; is selected, the status messages are logged and
+automatically stored into the central database at Nikhef for error
+tracking purposes. Status messages range from 101 - 199:</p>
+<ol class="arabic simple" start="101">
+<li>Copied &#8216;HiSPARC_Weather_default.ini&#8217; to &#8216;HiSPARC_Weather_user.ini&#8217;</li>
+<li>&#8216;HiSPARC_Weather_user.ini&#8217; file is used for initialisation.</li>
+<li>User ignores &#8216;STOP PROGRAM&#8217;, continue...</li>
+<li>Weather station parameters wil be initialised; please wait...</li>
+</ol>
+<ol class="arabic simple" start="111">
+<li>HiSPARC weather station connected through &#8216;USB WeatherLink&#8217;.</li>
+<li>HiSPARC weather station &#8216;USB WeatherLink&#8217; is closed.</li>
+<li>HiSPARC weather station connected through &#8216;Serial Port WeatherLink&#8217;.</li>
+<li>HiSPARC weather station &#8216;Serial port WeatherLink&#8217; is closed.</li>
+</ol>
+<ol class="arabic simple" start="117">
+<li>Settings will be written to the weather station console; please
+wait...</li>
+</ol>
+<ol class="arabic simple" start="121">
+<li>User pressed &#8216;HELP&#8217; button in serial connection/USB dialogue.</li>
+<li>User modified station connection settings in serial/USB dialogue;
+changes have been saved.</li>
+<li>Switched to &#8216;DAQ MODE&#8217;.</li>
+<li>User pressed &#8216;STOP PROGRAM&#8217; button.</li>
+<li>(New) settings have been saved.</li>
+<li>User pressed &#8216;CALIBRATE&#8217; button; please wait until settings have
+been uploaded...</li>
+<li>User skips weather station calibration, continue...</li>
+<li>User pressed &#8216;RESET&#8217; button but skips reset.</li>
+<li>User pressed &#8216;HELP&#8217; button.</li>
+<li>Switched to &#8216;STOP DAQ&#8217; mode.</li>
+<li>Weather station DAQ starts in &#8216;DAQ MODE&#8217;.</li>
+</ol>
+<ol class="arabic simple" start="136">
+<li>Calibration: latitude and/or longitude have not been modified.</li>
+<li>Calibration: temperature and/or humidity offset(s) have not been
+modified.</li>
+<li>Calibration: sea level barometer and/or station elevation have not
+been modified.</li>
+<li>Calibration: wind direction offset has not been modified.</li>
+</ol>
+<ol class="arabic simple" start="141">
+<li>Weather station console successfully initialised.</li>
+</ol>
+<ol class="arabic simple" start="150">
+<li>Weather sensor units are correctly set; no modifications required.</li>
+</ol>
+<ol class="arabic simple" start="155">
+<li>Rain collector model correctly set (&#8216;0.2 mm&#8217;); no modification required.</li>
+</ol>
+<ol class="arabic simple" start="165">
+<li>Wind cup size correctly set (&#8216;large&#8217;); no modification required.</li>
+</ol>
+<ol class="arabic simple" start="170">
+<li>Time on weather station console correctly set (= pc time); no
+modification required.</li>
+</ol>
+<ol class="arabic simple" start="175">
+<li>Calibration: station latitude and longitude match console settings;
+no adjustment required.</li>
+</ol>
+<ol class="arabic simple" start="180">
+<li>Calibration: wind direction offset matches console settings; no
+adjustment required.</li>
+</ol>
+<ol class="arabic simple" start="185">
+<li>Calibration: temperature and humidity offset(s) match console
+settings; no adjustment required.</li>
+</ol>
+</div>
+<div class="section" id="warnings-2xx">
+<h3>6.2.2. Warnings (2xx)<a class="headerlink" href="#warnings-2xx" title="Permalink to this headline">¶</a></h3>
+<p>Warning messages inform about successfully actions and/or non-fatal
+errors. There are various reasons why a warning is issued. When &#8216;DAQ
+MODE&#8217; is selected, the status messages are logged and automatically
+stored into the central database at Nikhef for problem analyses. Warning
+messages range from 201 - 299. Their meaning is explained below:</p>
+<ol class="arabic simple" start="201">
+<li>No GPS time correction in HiSPARC.ini (correction = 0 s)!</li>
+<li>PC clock time error in HiSPARC.ini (GPS time correction is set to 0
+s)!</li>
+<li>Error in GPS time stamp in HiSPARC.ini (GPS time correction is set
+to 0 s)!</li>
+<li>Unknown message in HiSPARC.ini (GPS time correction is set to 0 s)!</li>
+</ol>
+<p><strong>Reason</strong>: the weather station is used in &#8216;stand-alone mode&#8217;, that is,
+there is no GPS time information generated by the HiSPARC cosmic ray
+station. The HiSPARC DAQ program calculates the time difference
+between GPS and local pc-clock (both programs need to be running on the
+same pc!) in order to synchronise cosmic ray time-stamps and weather
+station measurements. Switching on the HiSPARC DAQ system
+automatically enforces correct synchronisation (every 10 minutes the
+offset is adjusted).</p>
+<ol class="arabic simple" start="205">
+<li>Time difference too large in HiSPARC.ini (GPS time correction is
+set to 0 s)!</li>
+</ol>
+<p><strong>Reason</strong>: GPS is (not yet) producing the correct time (self-survey not
+completed or not yet done). Check the GPS of your cosmic ray set-up!</p>
+<ol class="arabic simple" start="211">
+<li>Cannot open HiSPARC weather station connection through &#8216;USB
+WeatherLink&#8217;!</li>
+<li>Cannot close HiSPARC weather station connection through &#8216;USB
+WeatherLink&#8217;!</li>
+</ol>
+<p><strong>Reason</strong>: USB connection between pc and weather station console was
+found, but failed!</p>
+<ol class="arabic simple" start="213">
+<li>Cannot open HiSPARC weather station connection through &#8216;Serial Port
+WeatherLink&#8217;!</li>
+<li>Cannot close HiSPARC weather station connection through &#8216;Serial
+Port WeatherLink&#8217;!</li>
+</ol>
+<p><strong>Reason</strong>: Serial connection (or serial to USB converter) between pc
+and weather station console failed!</p>
+<ol class="arabic simple" start="215">
+<li>Station ID = 0; please select a valid station number!</li>
+</ol>
+<p><strong>Reason</strong>: You have to provide a valid station number. In general this
+is the same number as your cosmic ray station</p>
+<ol class="arabic simple" start="216">
+<li>Serial COM port number = 0; please select a valid port number!</li>
+</ol>
+<p><strong>Reason</strong>: You make use of a serial connection or serial to USB
+converter that generates a COM port on your pc. You have to select
+number associated with the correct COM port. You may obtain this number
+by analysing your hardware (&#8216;Apparatenbeheer&#8217;) under Windows.</p>
+<ol class="arabic simple" start="217">
+<li>Try automatic reconnection to HiSPARC weather station console!</li>
+</ol>
+<p><strong>Reason</strong>: Connection between pc and weather station console failed;
+the program tries repair the connection</p>
+<ol class="arabic simple" start="221">
+<li>Please check your internet connection; cannot reach HiSPARC
+document server!</li>
+</ol>
+<p><strong>Reason</strong>: You pressed the &#8216;HELP&#8217; button and cannot obtain the
+help-file since either the internet connection is down or the document
+server is (temporarily) not available</p>
+<ol class="arabic simple" start="222">
+<li>User pressed &#8216;STOP PROGRAM&#8217; button in serial/USB dialogue!</li>
+<li>Overflow event queue for buffer database; 1 event is lost!</li>
+</ol>
+<p><strong>Reason</strong>: In rare cases this may occur during the &#8216;manual&#8217; calibration
+procedure while the program continues to receive data from the weather
+station console and may run out of memory. Throwing away events prevents
+the system from crashing (in any case you are not running in &#8216;DAQ MODE&#8217;).</p>
+<ol class="arabic simple" start="224">
+<li>Overflow event queue for front panel graphs!</li>
+</ol>
+<p><strong>Reason</strong>: Should never occur, used for debugging purposes</p>
+<p>226. No modification(s); proposed calibration parameters equal
+calibration parameters on console!</p>
+<ol class="arabic simple" start="228">
+<li>User pressed &#8216;RESET&#8217; button; restart with default settings!</li>
+</ol>
+<p>Following set of warning messages may hint at either a bad connection
+between pc and and weather station console or a problem with the console
+(firmware/hardware) itself:</p>
+<ol class="arabic simple" start="231">
+<li>Failed to set timeout/read weather station and/or DLL/Firmware
+version/date, will retry!</li>
+<li>Failed to initialise weather sensor units, will retry!</li>
+<li>Failed to set rain collector model to &#8216;0.2 mm&#8217;, will retry!</li>
+<li>Failed to set wind cup size to &#8216;large&#8217;, will retry!</li>
+<li>Failed to synchronise pc clock and weather station clock, will
+retry!</li>
+<li>Calibration: failed to set latitude and/or longitude, will retry!</li>
+<li>Calibration: failed to set temperature and/or humidity offset(s),
+will retry!</li>
+<li>Calibration: failed to set sea level barometer and/or station
+elevation, will retry!</li>
+<li>Calibration: failed to set wind direction offset, will retry!</li>
+</ol>
+<ol class="arabic simple" start="241">
+<li>Failed to initialise weather station console, will retry!</li>
+</ol>
+<ol class="arabic simple" start="250">
+<li>Weather sensor units have successfully been modified!</li>
+</ol>
+<ol class="arabic simple" start="255">
+<li>Rain collector model has successfully been set to &#8216;0.2 mm&#8217;!</li>
+</ol>
+<ol class="arabic simple" start="265">
+<li>Wind cup size has successfully been set to &#8216;large&#8217;!</li>
+</ol>
+<ol class="arabic simple" start="270">
+<li>Time on weather station console has successfully been set to pc
+time!</li>
+</ol>
+<ol class="arabic simple" start="275">
+<li>Calibration: station latitude and/or longitude have successfully
+been modified!</li>
+</ol>
+<ol class="arabic simple" start="280">
+<li>Calibration: wind direction offset has successfully been modified!</li>
+</ol>
+<ol class="arabic simple" start="285">
+<li>Calibration: temperature and/or humidity offset(s) have
+successfully been modified!</li>
+</ol>
+<ol class="arabic simple" start="292">
+<li>Calibration: sea level barometer value and station elevation have
+successfully been reset to factory settings!</li>
+</ol>
+<ol class="arabic simple" start="295">
+<li>Calibration: sea level barometer value has successfully been
+modified!</li>
+</ol>
+<ol class="arabic simple" start="298">
+<li>Calibration: station elevation has successfully been modified!</li>
+</ol>
+</div>
+<div class="section" id="errors-3xx">
+<h3>6.2.3. Errors (3xx)<a class="headerlink" href="#errors-3xx" title="Permalink to this headline">¶</a></h3>
+<p>Vast majority of error messages are fatal and will force the weather
+station data acquisition to stop. When &#8216;DAQ MODE&#8217; is selected -
+depending on which part of the initialisation phase has successfully
+completed -, the error messages are logged and automatically stored into
+the central database at Nikhef for error tracking purposes. For error
+messages related to hardware and firmware versions, please consult the
+Davis website and check carefully(!) whether you may update/restore the
+firmware trough the serial/USB link (see:
+<a class="reference external" href="http://www.davisnet.com/support/weather/downloads/software_frmwr.asp">http://www.davisnet.com/support/weather/downloads/software_frmwr.asp</a>).
+Error messages range from 301 - 399. Their meaning is explained below:</p>
+<ol class="arabic simple" start="301">
+<li>Path to HiSPARC weather station DAQ software has not been found!</li>
+</ol>
+<p><strong>Reason</strong>: Software is not properly installed; executable is missing or
+mis-placed</p>
+<ol class="arabic simple" start="302">
+<li>Initialisation file &#8216;HiSPARC.ini&#8217; has not been found!</li>
+</ol>
+<p><strong>Reason</strong>: see 301; (general) initialisation file is missing or
+mis-placed</p>
+<ol class="arabic simple" start="303">
+<li>Initialisation file &#8216;HiSPARC_Weather_default.ini&#8217; has not been
+found!</li>
+</ol>
+<p><strong>Reason</strong>: see 301; initialisation file with default settings is
+missing or mis-placed</p>
+<ol class="arabic simple" start="304">
+<li>Failed copying &#8216;HiSPARC_Weather_default.ini&#8217; to
+&#8216;HiSPARC_Weather_user.ini&#8217;!</li>
+</ol>
+<p><strong>Reason</strong>: may hint at authorisation problems for the account since the
+file can not be written</p>
+<ol class="arabic simple" start="306">
+<li>Error in reading parameters from HiSPARC.ini!</li>
+</ol>
+<p><strong>Reason</strong>: (general) initialisation file may be outdated (old version)
+or corrupted</p>
+<ol class="arabic simple" start="322">
+<li>Lost connection to weather station; will automatically try to
+reconnect!</li>
+</ol>
+<p><strong>Reason</strong>: Connection between pc and weather station console failed;
+the program tries repair the connection</p>
+<ol class="arabic simple" start="323">
+<li>Cannot connect to buffer database!</li>
+</ol>
+<p><strong>Reason</strong>: Most likely, the MySQL program is not running; after
+verifying that all software is correctly installed, restart your computer</p>
+<ol class="arabic simple" start="330">
+<li>Failed to initialise weather station supporting software library
+(DLL), quit!</li>
+</ol>
+<p><strong>Reason</strong>: Should never occur, used for debugging purposes or hints at
+software installation problem</p>
+<ol class="arabic simple" start="340">
+<li>This weather station model is not supported!</li>
+</ol>
+<p><strong>Reason</strong>: Only Davis Vantage weather stations are supported for now...</p>
+<p>Following errors may occur when the connection between pc and weather
+station console failed or is timed-out, firmware (in the console) is
+incompatible with the action the program tries to execute or the console
+has a hardware problem. Try to reset the console (remove power -
+including batteries! - ) and restart the pc</p>
+<ol class="arabic simple" start="341">
+<li>Failed to initialise weather station console several times, quit!</li>
+</ol>
+<ol class="arabic simple" start="350">
+<li>Failed to read weather sensor units!</li>
+<li>Failed to write weather sensor units!</li>
+<li>Failed to read weather sensor units after modification!</li>
+<li>Failed to match weather sensor units after write/read operation!</li>
+</ol>
+<ol class="arabic simple" start="355">
+<li>Failed to read rain collector model!</li>
+<li>Failed to write rain collector model!</li>
+<li>Failed to read rain collector model after modification!</li>
+<li>Failed to match rain collector model after write/read operation!</li>
+<li>Failed to set rain collector model (&#8216;0.2 mm&#8217;) on console!</li>
+<li>Failed to read rain collector model from console after modification!</li>
+<li>Failed to match rain collector model from console after modification!</li>
+<li>Failed to read rain collector model from console!</li>
+</ol>
+<ol class="arabic simple" start="365">
+<li>Failed to read wind cup size!</li>
+<li>Failed to write wind cup size!</li>
+<li>Failed to read wind cup size after modification!</li>
+<li>Failed to set wind cup size to &#8216;large&#8217;; please check/modify cup
+size on the weather station console!</li>
+</ol>
+<ol class="arabic simple" start="370">
+<li>Failed to read time from weather station console!</li>
+<li>Failed to write pc time to weather station console!</li>
+<li>Failed to read time from weather station console after modification!</li>
+<li>Failed to match time from weather station console after write/read
+operation!</li>
+</ol>
+<p>Following errors may occur while trying to load (calibration) parameters
+into the weather station console. The success of some of the
+(calibration) actions may depend on (a general statement can not be made
+here):</p>
+<ul class="simple">
+<li>console hardware version</li>
+<li>console firmware version (firmware should be March 2004 Rev. B or
+later)</li>
+<li>errors in software interface from Davis (bugs in LabView code
+interface nodes)</li>
+</ul>
+<ol class="arabic simple" start="375">
+<li>Calibration: failed to read station latitude and/or longitude!</li>
+<li>Calibration: failed to write station latitude!</li>
+<li>Calibration: failed to write station longitude!</li>
+<li>Calibration: failed to read station latitude and/or longitude after modification!</li>
+<li>Calibration: failed to match station latitude and/or longitude after write/read operation!</li>
+<li>Calibration: failed to read wind direction offset!</li>
+<li>Calibration: failed to write wind direction offset!</li>
+<li>Calibration: failed to read wind direction offset after modification!</li>
+<li>Calibration: failed to match wind direction offset after write/read operation!</li>
+</ol>
+<ol class="arabic simple" start="385">
+<li>Calibration: temperature and/or humidity offset(s) out of range!</li>
+<li>Calibration: failed to load temperature and/or humidity calibration data from console!</li>
+<li>Calibration: failed to write temperature and/or humidity offset(s) after modification!</li>
+<li>Calibration: failed to store temperature and/or humidity offset(s) into console!</li>
+<li>Calibration: failed to match temperature and/or humidity offset(s) after write/read operation!</li>
+<li>Calibration: failed to write sea level barometer value and/or station elevation!</li>
+<li>Calibration: failed to read sea level barometer value and/or station elevation!</li>
+<li>Failed to set sea level barometer and station elevation; please check/modify them on the weather station console!</li>
+<li>Calibration: failed to write sea level barometer value!</li>
+<li>Calibration: failed to read sea level barometer value after modification!</li>
+<li>Calibration: failed to match sea level barometer value after write/read operation!</li>
+<li>Calibration: failed to write station elevation!</li>
+<li>Calibration: failed to read station elevation after modification!</li>
+<li>Calibration: failed to match station elevation after write/read operation!</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/header.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">6. Error codes</a><ul>
+<li><a class="reference internal" href="#status">6.1. Status</a></li>
+<li><a class="reference internal" href="#messages">6.2. Messages</a><ul>
+<li><a class="reference internal" href="#status-1xx">6.2.1. Status (1xx)</a></li>
+<li><a class="reference internal" href="#warnings-2xx">6.2.2. Warnings (2xx)</a></li>
+<li><a class="reference internal" href="#errors-3xx">6.2.3. Errors (3xx)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="graphs.html"
+                        title="previous chapter">5. Graphs</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="development.html"
+                        title="next chapter">7. LabView Development</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/error_codes.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="development.html" title="7. LabView Development"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="graphs.html" title="5. Graphs"
+             >previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, HiSPARC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

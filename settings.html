@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3. Settings &mdash; HiSPARC Weather DAQ 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/hisparc_style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="HiSPARC Weather DAQ 0.1 documentation" href="index.html" />
+    <link rel="next" title="4. Sensor ranges and accuracy" href="sensors.html" />
+    <link rel="prev" title="2. Overview" href="overview.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sensors.html" title="4. Sensor ranges and accuracy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="2. Overview"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="settings">
+<h1>3. Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p>Before sending data to the central database can start, that is, before
+switching to data acquisition mode (&#8216;DAQ Mode&#8217;), the station settings
+have to be chosen. Next to providing some general information, several
+switches can be activated at the &#8216;Settings&#8217; tab. A screenshot of this
+screen is shown below.</p>
+<p>The upper left block gives:</p>
+<ul class="simple">
+<li>COM port number and baud rate (when a serial connection is active) or
+USB device number (direct USB interface).</li>
+<li>DAQ software version (the version of the software you are actually
+running)</li>
+<li>The date at which this version of the software was created</li>
+<li>Station number (should correspond with the number of your cosmic ray
+set-up - when present -)</li>
+<li>Name of the intermediate data store on the local pc (standard: buffer)</li>
+<li>Version number of the Vantage software library to address the console
+(DLL)</li>
+<li>Weather station model</li>
+<li>Firmware version and release date</li>
+</ul>
+<p>Depending on the weather station configuration, a subset or all sensor
+types can be selected (central block). Note that derived quantities can
+only be calculated when the (outdoor) sensors are connected (for example
+wind chill: outdoor temperature and wind speed). The configuration is
+only accepted (and stored) after pressing the &#8216;SAVE SETTINGS&#8217; button.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/weatherdaq_settings.png"><img alt="_images/weatherdaq_settings.png" src="_images/weatherdaq_settings.png" style="width: 70%;" /></a>
+<p class="caption">The Settings tab (click to enlarge)</p>
+</div>
+<div class="section" id="calibration">
+<h2>3.1. Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
+<p>Several sensors can be calibrated. However, his option should be handled
+with care. Depending on hardware and/or firmware version sometimes
+unpredicted behaviour is observed. Press &#8216;CALIBRATE&#8217; to write the new
+values into the weather station console and store the new values in the
+initialisation file. After using the calibration procedure (only the
+sensors for which the calibration values have been changed will be
+affected!), check whether the correct values have been loaded into the
+weather station console (consult the Davis user manual).</p>
+<p>Executing &#8216;RESET&#8217; will re-initialise all settings to default and will
+clear the calibration values.</p>
+</div>
+<div class="section" id="daq-mode">
+<h2>3.2. DAQ Mode<a class="headerlink" href="#daq-mode" title="Permalink to this headline">¶</a></h2>
+<p>To ensure that next time the pc (automatically) starts the weather
+station software in &#8216;DAQ mode&#8217;, to check the &#8216;Start in DAQ mode?&#8217; box.</p>
+<p>After switching to DAQ mode, this tab will no longer be visible;
+settings can only be changed when not running in DAQ mode!</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/header.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. Settings</a><ul>
+<li><a class="reference internal" href="#calibration">3.1. Calibration</a></li>
+<li><a class="reference internal" href="#daq-mode">3.2. DAQ Mode</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">2. Overview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sensors.html"
+                        title="next chapter">4. Sensor ranges and accuracy</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/settings.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sensors.html" title="4. Sensor ranges and accuracy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="2. Overview"
+             >previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, HiSPARC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>

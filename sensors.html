@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. Sensor ranges and accuracy &mdash; HiSPARC Weather DAQ 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/hisparc_style.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="HiSPARC Weather DAQ 0.1 documentation" href="index.html" />
+    <link rel="next" title="5. Graphs" href="graphs.html" />
+    <link rel="prev" title="3. Settings" href="settings.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="graphs.html" title="5. Graphs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="settings.html" title="3. Settings"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sensor-ranges-and-accuracy">
+<h1>4. Sensor ranges and accuracy<a class="headerlink" href="#sensor-ranges-and-accuracy" title="Permalink to this headline">¶</a></h1>
+<p>Following table gives an overview of sensor ranges and their precision
+for Davis VantagePro weather stations. Since Davis hardware evolved over
+time, values apply for latest models (2012). Older models may have
+slightly different lower and upper bounds for several parameters.
+However, for our applications these differences are hardly relevant.
+Same holds for differences in the sensitivity of specific sensors
+between models.</p>
+<div class="section" id="indoor-sensors">
+<h2>4.1. Indoor sensors<a class="headerlink" href="#indoor-sensors" title="Permalink to this headline">¶</a></h2>
+<p>These are the sensors integrated in the weather station console:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="30%" />
+<col width="17%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Ranges</th>
+<th class="head">Accuracy</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Temperature</td>
+<td>0 &lt; IT &lt; 60</td>
+<td>± 0.1</td>
+<td>°C</td>
+</tr>
+<tr class="row-odd"><td>Relative humidity</td>
+<td>10 &lt; IRH &lt; 90</td>
+<td>± 1</td>
+<td>%</td>
+</tr>
+<tr class="row-even"><td>Barometer</td>
+<td>880 &lt; P &lt; 1080</td>
+<td>± 0.1</td>
+<td>hPa</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outdoor-sensors">
+<h2>4.2. Outdoor sensors<a class="headerlink" href="#outdoor-sensors" title="Permalink to this headline">¶</a></h2>
+<p>These sensors are integrated in the weather station base station:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="30%" />
+<col width="17%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Ranges</th>
+<th class="head">Accuracy</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Temperature</td>
+<td>-40 &lt; OT &lt; 65</td>
+<td>± 0.1</td>
+<td>°C</td>
+</tr>
+<tr class="row-odd"><td>Relative humidity</td>
+<td>0 &lt; ORH &lt; 100</td>
+<td>± 1</td>
+<td>%</td>
+</tr>
+<tr class="row-even"><td>Wind speed</td>
+<td>1 &lt; WS &lt; 68</td>
+<td>± 0.5</td>
+<td>m/s</td>
+</tr>
+<tr class="row-odd"><td>Wind direction</td>
+<td>0 &lt; WD &lt; 360</td>
+<td>± 1 0</td>
+<td>°</td>
+</tr>
+<tr class="row-even"><td>Rain rate</td>
+<td>0 &lt; RR &lt; 1999.9</td>
+<td>± 0.25</td>
+<td>mm/hr</td>
+</tr>
+</tbody>
+</table>
+<p>Additional outdoor sensors (optional):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="30%" />
+<col width="17%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Ranges</th>
+<th class="head">Accuracy</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Solar radiation</td>
+<td>0 &lt; SR &lt; 1800</td>
+<td>± 1</td>
+<td>W/m2</td>
+</tr>
+<tr class="row-odd"><td>UV</td>
+<td>0 &lt; UV &lt; 16</td>
+<td>± 0.1</td>
+<td>UV</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="derived-quantities">
+<h3>4.2.1. Derived quantities<a class="headerlink" href="#derived-quantities" title="Permalink to this headline">¶</a></h3>
+<p>Using the outdoor sensors these quantities are derived:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="30%" />
+<col width="17%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Ranges</th>
+<th class="head">Accuracy</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Evapotranspiration rate</td>
+<td>0 &lt; ET &lt; 999.9</td>
+<td>± 0.25</td>
+<td>mm</td>
+</tr>
+<tr class="row-odd"><td>Heat index</td>
+<td>-40 &lt; HI &lt; 57</td>
+<td>± 1</td>
+<td>°C</td>
+</tr>
+<tr class="row-even"><td>Dew point</td>
+<td>-76 &lt; DP &lt; 54</td>
+<td>± 1</td>
+<td>°C</td>
+</tr>
+<tr class="row-odd"><td>Wind chill</td>
+<td>-84 &lt; WD &lt; 51</td>
+<td>± 1</td>
+<td>°C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="calibration">
+<h2>4.3. Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
+<p>The barometer readings can be adjusted/calibrated to following altitude
+and pressure ranges:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="30%" />
+<col width="17%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variable</th>
+<th class="head">Ranges</th>
+<th class="head">Accuracy</th>
+<th class="head">Units</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Elevation</td>
+<td>-600 &lt; EL &lt; 4500</td>
+<td>1</td>
+<td>m</td>
+</tr>
+<tr class="row-odd"><td>Barometer</td>
+<td>650 &lt; P &lt; 1080</td>
+<td>0.1</td>
+<td>hPa</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/header.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. Sensor ranges and accuracy</a><ul>
+<li><a class="reference internal" href="#indoor-sensors">4.1. Indoor sensors</a></li>
+<li><a class="reference internal" href="#outdoor-sensors">4.2. Outdoor sensors</a><ul>
+<li><a class="reference internal" href="#derived-quantities">4.2.1. Derived quantities</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#calibration">4.3. Calibration</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="settings.html"
+                        title="previous chapter">3. Settings</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="graphs.html"
+                        title="next chapter">5. Graphs</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sensors.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="graphs.html" title="5. Graphs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="settings.html" title="3. Settings"
+             >previous</a> |</li>
+        <li><a href="index.html">HiSPARC Weather DAQ 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, HiSPARC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+  </body>
+</html>
