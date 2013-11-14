@@ -35,10 +35,3 @@ Contents:
    graphs
    error_codes
    development
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
